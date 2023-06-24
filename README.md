@@ -1,10 +1,9 @@
+嗨 大家好，我是Neo。
 
+我是一个polkadot的粉丝，也活跃在各个波卡社区的群里。过去几个月，总是有朋友在社区中询问关于波卡的问题，这其中也包含一些开发者。我正好对这块很熟悉，所以这里做一个关于polkadot.js的脚本教程，以及ink的智能合约教程。
 
-I am building a polkadot js/ink edu docs.
+我本人对前端不太熟，这里就fork了wtf.academy的前端。
 
-I am not familiar to the front-end coding, so I choose to fork the website from wtf.academy as the template. 
-
-Wish anyone like polkadot join here. LoL 
-
+如果你也喜爱polkadot，欢迎你的加入😁
 
 
