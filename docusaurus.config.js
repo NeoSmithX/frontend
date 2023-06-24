@@ -107,13 +107,13 @@ const config = {
             href: '/solidity-start',
             position: 'left',
             exact: false,
-            label: 'Solidity 101',
+            label: 'polkadot-js脚本',
           },
           {
             href: '/solidity-advanced',
             position: 'left',
             exact: false,
-            label: 'Solidity 102',
+            label: 'polkadot-ink智能合约',
           },
           {
             href: '/solidity-application',
