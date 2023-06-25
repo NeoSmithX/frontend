@@ -3,33 +3,33 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: '极简开源教程',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        社区自制的极简开源教程，让你更快上手Web3技术。
-      </>
-    ),
-  },
-  {
-    title: 'PR-to-Earn',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        WTF学院为贡献者提供月度奖励及赏金任务。
-      </>
-    ),
-  },
-  {
-    title: '课程认证',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-      学习并通过专项测试，领取课程认证SoulBound Token（开发中）。
-      </>
-    ),
-  },
+  // {
+  //   title: '极简开源教程',
+  //   Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+  //   description: (
+  //     <>
+  //       社区自制的极简开源教程，让你更快上手Web3技术。
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: 'PR-to-Earn',
+  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+  //   description: (
+  //     <>
+  //       WTF学院为贡献者提供月度奖励及赏金任务。
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: '课程认证',
+  //   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+  //   description: (
+  //     <>
+  //     学习并通过专项测试，领取课程认证SoulBound Token（开发中）。
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Svg, title, description}) {

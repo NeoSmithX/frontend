@@ -55,7 +55,7 @@ export const Contributor = () => {
             </div>
         )
     }
-
+    
     return (
         <section>
             <div className={styles['background']}>

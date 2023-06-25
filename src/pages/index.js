@@ -15,8 +15,8 @@ import {DiscordLogoSvg} from "../svg";
 
 function HomepageHeader() {
     
-    const bannerTitleImg = require('@site/static/img/home_banner_title.png').default;
-    const bannerBgImg = require('@site/static/img/home_banner.jpg').default;
+    const bannerTitleImg = require('@site/static/img/polkadot_log.png').default;
+    const bannerBgImg = require('@site/static/img/polkadot_log.png').default;
 
     return (
         <header>
@@ -37,14 +37,14 @@ function HomepageHeader() {
                         <Translate id="home.tagline.2">Learn, Contribute, and Get Certificates</Translate>
                     </h4>
                     <div className={styles.wtfBannerBtnBox}>
-                        <Link to="/learning-center">
+                        {/* <Link to="/learning-center">
                             <div className={styles.wtfBannerBtn}>
                                 <Translate id="home.StartLearning">
                                     Start Learning
                                 </Translate>
                             </div>
-                        </Link>
-                        <Link to="https://discord.com/invite/5akcruXrsk">
+                        </Link> */}
+                        <Link to="https://discord.com/">
                             <div className={styles.discordBtn}>
                                 <DiscordLogoSvg className={styles.discordLogo} />
                                 <Translate id="home.joinDiscord">Join WTF Community</Translate>
@@ -68,9 +68,9 @@ export default function Home() {
             description="WTF Academy is Web3 Open University, we create open-source tutorials in Solidity, Ethers.js, and more.">
             <HomepageHeader/>
             <main>
-                <HomepageLearningCenter/>
+                {/* <HomepageLearningCenter/> */}
                 <HomepageTarget/>
-                <Contributor/>
+                {/* <Contributor/> */}
             </main>
         </Layout>
     );

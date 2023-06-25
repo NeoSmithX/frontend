@@ -109,18 +109,18 @@ const config = {
             exact: false,
             label: 'polkadot-js 101',
           },
-          {
-            href: '/solidity-advanced',
-            position: 'left',
-            exact: false,
-            label: 'polkadot-js 102',
-          },
-          {
-            href: '/solidity-application',
-            position: 'left',
-            exact: false,
-            label: 'polkadot-ink 101',
-          },
+          // {
+          //   href: '/solidity-advanced',
+          //   position: 'left',
+          //   exact: false,
+          //   label: 'polkadot-js 102',
+          // },
+          // {
+          //   href: '/solidity-application',
+          //   position: 'left',
+          //   exact: false,
+          //   label: 'polkadot-ink 101',
+          // },
           // {
           //   href: 'https://github.com/AmazingAng/WTFSolidity/discussions',
           //   label: 'Forum',
@@ -194,7 +194,9 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} xxx.`,
+        // copyright:"ddd"
+        // copyright: '339339'
+        copyright: `F 1133Academy.`,
       },
       prism: {
         theme: lightCodeTheme,

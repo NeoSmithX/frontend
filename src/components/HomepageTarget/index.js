@@ -5,22 +5,22 @@ import Translate from '@docusaurus/Translate';
 export default function HomepageTarget() {
 
     const CourseList = [
-        {
-            title: <Translate id="home.goals.1">Open-Source</Translate>,
-            imgUrl: require('@site/static/img/home_target1.png').default,
-        },
-        {
-            title: <Translate id="home.goals.2">On-chain Certificates</Translate>,
-            imgUrl: require('@site/static/img/home_target2.png').default,
-        },
-        {
-            title: <Translate id="home.goals.3">PR-to-Earn</Translate>,
-            imgUrl: require('@site/static/img/home_target3.png').default,
-        },
-        {
-            title: <Translate id="home.goals.4">Community Driven</Translate>,
-            imgUrl: require('@site/static/img/home_target4.png').default,
-        },
+        // {
+        //     title: <Translate id="home.goals.1">Open-Source</Translate>,
+        //     imgUrl: require('@site/static/img/home_target1.png').default,
+        // },
+        // {
+        //     title: <Translate id="home.goals.2">On-chain Certificates</Translate>,
+        //     imgUrl: require('@site/static/img/home_target2.png').default,
+        // },
+        // {
+        //     title: <Translate id="home.goals.3">PR-to-Earn</Translate>,
+        //     imgUrl: require('@site/static/img/home_target3.png').default,
+        // },
+        // {
+        //     title: <Translate id="home.goals.4">Community Driven</Translate>,
+        //     imgUrl: require('@site/static/img/home_target4.png').default,
+        // },
     ];
 
     function Course({imgUrl, title}) {
