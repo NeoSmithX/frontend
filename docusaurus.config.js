@@ -22,7 +22,7 @@ function defineSection(section, version = {}, options = {}) {
       include: ['**/*.md', '**/*.mdx'],
       sidebarPath: require.resolve('./sidebars-default.js'),
       breadcrumbs: false,
-      editUrl: 'https://github.com/WTFAcademy/frontend',
+      editUrl: 'https://github.com/',
       versions: version && {
         current: {
           label: version.label,
@@ -91,41 +91,41 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/wtflogo.png',
+      image: 'img/polkadot_log.png',
       navbar: {
         logo: {
-          alt: 'WTF Logo',
-          src: 'img/wtflogo.png',
+          alt: 'polkadot Logo',
+          src: 'img/polkadot_log.png',
         },
         items: [
           {
             href: '/learning-center',
-            label: 'Center',
+            label: '波卡架构',
             position: 'left',
           },
           {
             href: '/solidity-start',
             position: 'left',
             exact: false,
-            label: 'polkadot-js脚本',
+            label: 'polkadot-js 101',
           },
           {
             href: '/solidity-advanced',
             position: 'left',
             exact: false,
-            label: 'polkadot-ink智能合约',
+            label: 'polkadot-js 102',
           },
           {
             href: '/solidity-application',
             position: 'left',
             exact: false,
-            label: 'Solidity 103',
+            label: 'polkadot-ink 101',
           },
-          {
-            href: 'https://github.com/AmazingAng/WTFSolidity/discussions',
-            label: 'Forum',
-            position: 'left',
-          },
+          // {
+          //   href: 'https://github.com/AmazingAng/WTFSolidity/discussions',
+          //   label: 'Forum',
+          //   position: 'left',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -138,7 +138,7 @@ const config = {
       },
       footer: {
         logo: {
-          src: 'img/wtflogo.png',
+          src: 'img/polkadot_log.png',
           height: '36px',
         },
         links: [
@@ -155,7 +155,7 @@ const config = {
               },
               {
                 label: 'Forum',
-                href: 'https://github.com/AmazingAng/WTFSolidity/discussions',
+                href: 'https://github.com/',
               },
             ],
           },
@@ -164,19 +164,19 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/WTFAcademy',
+                href: 'https://github.com',
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/5akcruXrsk',
+                href: 'https://discord.gg',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/0xAA_Science',
+                href: 'https://twitter.com',
               },
               {
                 label: 'Wechat',
-                href: 'https://docs.google.com/forms/d/e/1FAIpQLSe4KGT8Sh6sJ7hedQRuIYirOoZK_85miz3dw7vA1-YjodgJ-A/viewform',
+                href: 'https://docs.google.com/',
               },
             ],
           },
@@ -185,16 +185,16 @@ const config = {
             items: [
               {
                 label: 'Gitcoin',
-                href: 'https://gitcoin.co/grants/6090/wtf-solidity',
+                href: 'https://gitcoin.co/',
               },
               {
                 label: 'Mirror',
-                href: 'https://mirror.xyz/wtfacademy.eth/collection',
+                href: 'https://mirror.xyz/',
               },
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} WTF Academy.`,
+        copyright: `© ${new Date().getFullYear()} xxx.`,
       },
       prism: {
         theme: lightCodeTheme,
