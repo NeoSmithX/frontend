@@ -1,0 +1,85 @@
+---
+title: 1. HelloPolkadot
+tags:
+  - solidity
+  - basic
+  - wtfacademy
+---
+
+import { SOLIDITY_COURSE_ID, SOLIDITY_BASIC_LESSON_ID_1 } from '@site/src/constants/course';
+
+# polkadot.js入门: 1. HelloPolkadot 
+
+<QuizProgress courseId={SOLIDITY_COURSE_ID} lessonId={SOLIDITY_BASIC_LESSON_ID_1}></QuizProgress>
+
+欢迎关注我的推特：[@Mr_Neo_Smith](https://twitter.com/Mr_Neo_Smith)
+
+所有代码和教程开源在 https://github.com/NeoSmithX/simple_tutorial_polkadot_js
+
+-----
+
+## polkadot简述
+polkadot的架构可以简单理解为 一条中继链和多条平行链。中继链负责安全，也是layer0，大家常听说的$DOT代币就是在中继链上。而多条平行链通过卡槽的形式依附于中继链上，都是独立的Layer 1（比如moonbeam、astar、acala等等）。
+
+## 脚本语言选择
+polkadot的脚本语言选择js （本教程使用typescript，它是js的超集），虽然官方有rust和python的库，但我尝试过，存在功能不全的问题。例如，rust库缺少对pending信息的解码，只能自己造轮子。
+## 安装
+1. 确保已安装yarn 和 typescript。 如需安装，可使用命令 
+
+    npm install --global yarn
+    npm install typescript --save-dev
+
+2. 安装polkadot.js标准库
+
+    yarn add @polkadot/api
+
+    大部分情况下，标准库即可。少许特定的功能，可能需要  
+
+    yarn add @polkadot/api@beta （初学者请忽略）
+
+## 第一次链接polkadot
+1. 创建测试文件
+    在project中创建 01_hello_polkadot.ts 文件
+2. 导入官方库
+    在01_hello_polkadot.ts文件中添加
+    ```
+    import { ApiPromise, WsProvider } from '@polkadot/api'  
+    ```
+    如果ide提示报错，可以尝试
+    ```
+    const { ApiPromise} = require('@polkadot/api')
+    const { WsProvider} = require('@polkadot/rpc-provider')
+    ```
+
+3. 创建api实体，输出链上信息
+
+    ```
+    async function main(){
+        // Construct
+        const wsProvider = new WsProvider('wss://rpc.polkadot.io')
+        const api = await ApiPromise.create({ provider: wsProvider })
+
+        // Do something
+        console.log(api.genesisHash.toHex());
+    }
+    main().then(() => {
+        console.log('test end')
+    })
+    ```
+4. 运行程序
+    ```
+    tsc 01_hello_polkadot.ts 
+    node 01_hello_polkadot.js
+    ```
+
+5. 其他
+
+    当你需要链接平行链的时候，只需将 wss://rpc.polkadot.io 替换为指定平行链的rpc即可 （个人经验，可根据 https://polkadot.js.org 查询官方rpc）
+
+
+
+
+### 资料推荐：
+1. [polkadot.js官方资料](https://polkadot.js.org/docs/)
+2. youtube视频
+

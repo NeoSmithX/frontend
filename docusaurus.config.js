@@ -34,17 +34,17 @@ function defineSection(section, version = {}, options = {}) {
 }
 
 const SECTIONS = [
-  defineSection('solidity-start'),
-  defineSection('solidity-advanced'),
-  defineSection('solidity-application'),
-  defineSection('ether-start'),
+  defineSection('polkadot-js-start'),
+  // defineSection('solidity-advanced'),
+  // defineSection('solidity-application'),
+  // defineSection('ether-start'),
 ];
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'WTF Academy',
-  tagline: 'Web3 Open University for Developers',
-  url: 'https://wtf.academy',
+  title: 'Polkadot Academy',
+  tagline: 'Open University for Polkadot Developers',
+  url: 'https://simple_polkadot.academy',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -52,8 +52,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'WTFAcademy', // Usually your GitHub org/user name.
-  projectName: 'frontend', // Usually your repo name.
+  organizationName: 'Neo', // Usually your GitHub org/user name.
+  projectName: 'frontend-for-polkadot-js-ink-tutorial', // Usually your repo name.
   themes: ['solive-docusaurus-theme-code'],
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -98,13 +98,13 @@ const config = {
           src: 'img/polkadot_log.png',
         },
         items: [
+          // {
+          //   href: '/learning-center',
+          //   label: '波卡架构',
+          //   position: 'left',
+          // },
           {
-            href: '/learning-center',
-            label: '波卡架构',
-            position: 'left',
-          },
-          {
-            href: '/solidity-start',
+            href: '/polkadot-js-start',
             position: 'left',
             exact: false,
             label: 'polkadot-js 101',
@@ -142,41 +142,41 @@ const config = {
           height: '36px',
         },
         links: [
-          {
-            title: 'Products',
-            items: [
-              {
-                label: 'Learning Center',
-                to: '/learning-center',
-              },
-              {
-                label: 'Courses',
-                to: '/learning-center',
-              },
-              {
-                label: 'Forum',
-                href: 'https://github.com/',
-              },
-            ],
-          },
+          // {
+          //   title: 'Products',
+          //   items: [
+          //     {
+          //       label: 'Learning Center',
+          //       to: '/learning-center',
+          //     },
+          //     {
+          //       label: 'Courses',
+          //       to: '/learning-center',
+          //     },
+          //     {
+          //       label: 'Youtube',
+          //       href: 'https://www.youtube.com/channel/UCosq09qMFKuxA7pVCw1Xt_g',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com',
-              },
+              // {
+              //   label: 'GitHub',
+              //   href: 'https://github.com',
+              // },
               {
                 label: 'Discord',
                 href: 'https://discord.gg',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com',
+                href: 'https://twitter.com/Mr_Neo_Smith',
               },
               {
-                label: 'Wechat',
-                href: 'https://docs.google.com/',
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UCosq09qMFKuxA7pVCw1Xt_g',
               },
             ],
           },
