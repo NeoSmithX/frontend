@@ -48,7 +48,7 @@
     "description": "The label of footer link with label=Mirror linking to https://mirror.xyz/wtfacademy.eth/collection"
   },
   "copyright": {
-    "message": "© 2023 WTF Academy.",
+    "message": "© 2023 Polkadot Academy.",
     "description": "The footer copyright"
   }
 }

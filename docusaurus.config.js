@@ -196,7 +196,7 @@ const config = {
         ],
         // copyright:"ddd"
         // copyright: '339339'
-        copyright: `F 1133Academy.`,
+        copyright: `© Polkadot Academy.`,
       },
       prism: {
         theme: lightCodeTheme,

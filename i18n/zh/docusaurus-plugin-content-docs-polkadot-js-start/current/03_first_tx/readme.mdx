@@ -1,0 +1,56 @@
+---
+title: 3. 第一笔交易
+tags:
+  - typescript
+  - polkadot
+---
+
+# polkadot.js入门: 3. 第一笔交易 
+
+
+欢迎关注我的推特：[@Mr_Neo_Smith](https://twitter.com/Mr_Neo_Smith)
+
+所有代码和教程开源在 https://github.com/NeoSmithX/simple_tutorial_polkadot_js
+
+-----
+
+## 波卡上的tx [视频解析](https://polkadot.js.org/docs/)
+波卡上的tx和evm是类似的。首先，需要基于tx的内容和链上格式要求，构建一笔交易信息；其次，利用上文中得到的signer对交易信息进行签名；最后，将交易信息和签名结果进行广播，以待节点对tx进行确认和上链。
+
+## js产生第一笔tx
+
+####    ！！！ 注意，波卡生态有个设定，每种资产都有最小存在额度，如果低于一定的数值，就会被国库强制回收。
+####    以波卡中继链为例，账户的DOT的生存数额为 1DOT （DOT精度为10，这里的1DOT在代码上为 10**10 ），那么需要注意两种情况
+
+####    （a）对方账户余额为0的时候，不能给对方发送小于1DOT，否则，对方接收后，依然小于1，会自动被国库回收。
+####    （b）交易结束，自身账户DOT需大于1DOT，否则会导致余额被国库回收。当然，你可以选择全部发送（即清空当前账户），这是可行的。
+
+
+
+1. 以波卡上发送2DOT到目标地址为例，首先产生交易
+
+    ```
+    const target_address = "5GRdmMkKeKaV94qU3JjDr2ZwRAgn3xwzd2FEJYKjjSFipiAe"
+    const transfer_amount = 2*10**10
+    const tx = await api.tx.balances.transfer_keep_alive(
+        {
+            Id:target_address
+        },
+        transfer_amount
+    )
+    ```
+2. 使用前文所得到的signer进行签名并广播
+    ```
+    await tx.signAndSend(signer)
+    ```
+
+
+### tips
+
+1. 不同平行链做同样的操作时，tx信息可能区别很大。即便是同一个平行链，也可能由于升级对tx所需信息进行版本更迭（尤其是XCM所需信息，变化很快）。建议利用polkadot.js官网和subscan浏览器等方式进行查询，可参考[我的视频](https://www.youtube.com/channel/UCosq09qMFKuxA7pVCw1Xt_g)
+
+
+### 资料推荐：
+1. [polkadot.js官方资料](https://polkadot.js.org/docs/)
+2. youtube视频
+
