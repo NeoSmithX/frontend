@@ -1,5 +1,5 @@
 ---
-title: 1. HelloPolkadot
+title: 4. 波卡浏览器
 tags:
   - solidity
   - basic
@@ -8,7 +8,7 @@ tags:
 
 import { SOLIDITY_COURSE_ID, SOLIDITY_BASIC_LESSON_ID_1 } from '@site/src/constants/course';
 
-# polkadot.js入门: 1. HelloPolkadot 
+# polkadot.js入门: 4. 波卡浏览器 
 
 <QuizProgress courseId={SOLIDITY_COURSE_ID} lessonId={SOLIDITY_BASIC_LESSON_ID_1}></QuizProgress>
 
@@ -18,8 +18,10 @@ import { SOLIDITY_COURSE_ID, SOLIDITY_BASIC_LESSON_ID_1 } from '@site/src/consta
 
 -----
 
-## polkadot简述
-polkadot的架构可以简单理解为 一条中继链和多条平行链。中继链负责安全，也是layer0，大家常听说的$DOT代币就是在中继链上。而多条平行链通过卡槽的形式依附于中继链上，都是独立的Layer 1（比如moonbeam、astar、acala等等）。
+## polkadot浏览器
+波卡上浏览器大部分是社区开源制作，有许多种。个人建议，subscan是最重要的，尤其是对波卡原生信息的解码（比如xcm等信息）
+
+
 
 ## 脚本语言选择
 polkadot的脚本语言选择js （本教程使用typescript，它是js的超集），虽然官方有rust和python的库，但我尝试过，存在功能不全的问题。例如，rust库缺少对pending信息的解码，只能自己造轮子。
