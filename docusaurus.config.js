@@ -22,7 +22,7 @@ function defineSection(section, version = {}, options = {}) {
       include: ['**/*.md', '**/*.mdx'],
       sidebarPath: require.resolve('./sidebars-default.js'),
       breadcrumbs: false,
-      editUrl: 'https://github.com/',
+      editUrl: 'https://github.com/NeoSmithX/frontend-for-polkadot-js-ink-tutorial',
       versions: version && {
         current: {
           label: version.label,
@@ -44,15 +44,15 @@ const SECTIONS = [
 const config = {
   title: 'Polkadot Academy',
   tagline: 'Open University for Polkadot Developers',
-  url: 'https://simple_polkadot.academy',
-  baseUrl: '/',
+  url: 'https://NeoSmithX.github.io',
+  baseUrl: '/frontend-for-polkadot-js-ink-tutorial/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Neo', // Usually your GitHub org/user name.
+  organizationName: 'NeoSmithX', // Usually your GitHub org/user name.
   projectName: 'frontend-for-polkadot-js-ink-tutorial', // Usually your repo name.
   themes: ['solive-docusaurus-theme-code'],
   // Even if you don't use internalization, you can use this field to set useful
