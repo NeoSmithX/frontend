@@ -255,11 +255,11 @@
     "description": "The title of the home page"
   },
   "home.tagline.1": {
-    "message": "面向Web2开发者的Web3开源学院",
+    "message": "波卡生态的最简教程",
     "description": "The tagline of the home page"
   },
   "home.tagline.2": {
-    "message": "学习，贡献，并获得链上技术认证",
+    "message": "js脚本、ink智能合约、XCM跨链互操作 快速入门手册",
     "description": "The tagline of the home page"
   },
   "home.StartLearning": {
