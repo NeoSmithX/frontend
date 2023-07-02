@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4403],{95903:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"polkadot-js-start"}')}}]);
